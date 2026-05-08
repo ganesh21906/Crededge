@@ -2,12 +2,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Card, Table, Tag, Button, Input, Select, Space,
-  Modal, Descriptions, Progress, Alert, Statistic, Row, Col,
+  Modal, Descriptions, Progress, Statistic, Row, Col,
   Badge, Avatar, Spin, message, Popconfirm, Divider
 } from 'antd';
 import {
   SettingOutlined, CheckCircleOutlined, CloseCircleOutlined,
-  SearchOutlined, ReloadOutlined, UserOutlined, ShopOutlined,
+  ReloadOutlined, UserOutlined, ShopOutlined,
   EyeOutlined, LogoutOutlined, ThunderboltOutlined
 } from '@ant-design/icons';
 import { motion } from 'framer-motion';
@@ -56,6 +56,7 @@ function AdminPanel() {
     }
   }, [pagination.pageSize, filters]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { loadData(1); }, []);
 
   const handleReview = async (appId, action) => {

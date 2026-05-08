@@ -3,7 +3,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   Card, Row, Col, Progress, Tag, Statistic, List,
-  Divider, Button, Alert, Spin, Space, Collapse, Badge, Timeline, Modal, Upload, Select, message, Form, Input
+  Divider, Button, Alert, Spin, Space, Badge, Timeline, Modal, Upload, Select, message, Form, Input
 } from 'antd';
 import {
   CheckCircleOutlined, WarningOutlined, InfoCircleOutlined,
@@ -19,10 +19,8 @@ import {
   getApplicationById, uploadBankStatement, uploadDocument, 
   initiateAAConsent, simulateAAApproval 
 } from '../services/api';
-import { RISK_CATEGORIES, SCORE_THRESHOLDS } from '../constants';
+import { RISK_CATEGORIES } from '../constants';
 import './CreditScore.css';
-
-const { Panel } = Collapse;
 
 // Animated counter
 const AnimatedNumber = ({ value, duration = 2000 }) => {

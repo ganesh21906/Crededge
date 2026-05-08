@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Card, Row, Col, Tag, Progress, Button, Badge, Divider, Collapse, Alert, Statistic } from 'antd';
-import { CheckCircleOutlined, ThunderboltOutlined, RocketOutlined } from '@ant-design/icons';
+import { Card, Row, Col, Tag, Progress, Button, Badge, Divider, Alert } from 'antd';
+import { ThunderboltOutlined, RocketOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { getEnginesStatus } from '../services/api';
 import './Engines.css';

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button, Progress, Card, Tag, Alert, Steps, message, Spin } from 'antd';
-import { CheckCircleOutlined, ArrowRightOutlined, TrophyOutlined, BrainOutlined } from '@ant-design/icons';
+import { Button, Progress, Tag, Alert, Spin } from 'antd';
+import { CheckCircleOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import { getPsychometricQuestions, submitPsychometric } from '../services/api';
 import './PsychometricQuiz.css';
 
