@@ -1,0 +1,238 @@
+{
+  "sampleIndividualApplications": [
+    {
+      "applicationId": "IND-SAMPLE-001",
+      "personalInfo": {
+        "fullName": "Amit Kumar Sharma",
+        "dateOfBirth": "1992-05-15",
+        "gender": "male",
+        "maritalStatus": "married",
+        "dependents": 2,
+        "mobileNumber": "9876543210",
+        "email": "amit.sharma@email.com"
+      },
+      "address": {
+        "address": "Flat 301, Green Valley Apartments, Sector 12",
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "pincode": "201301",
+        "residenceType": "rented",
+        "yearsAtAddress": 3.5
+      },
+      "employment": {
+        "employmentType": "salaried",
+        "employerName": "Infosys Technologies Ltd",
+        "monthlyIncome": 65000,
+        "yearsEmployed": 4,
+        "industryType": "it"
+      },
+      "education": {
+        "qualification": "graduate"
+      },
+      "banking": {
+        "hasBankAccount": true,
+        "bankName": "HDFC Bank",
+        "accountType": "savings",
+        "averageBalance": 25000
+      },
+      "alternativeData": {
+        "hasUtilityBills": true,
+        "hasRentalAgreement": true,
+        "hasUPIHistory": true,
+        "hasSocialMedia": true,
+        "utilityBillPaymentRegularity": 95,
+        "upiTransactionCount": 142,
+        "avgMonthlyUpiSpending": 18500
+      },
+      "loanDetails": {
+        "loanAmount": 300000,
+        "loanPurpose": "education",
+        "repaymentPeriod": 36
+      },
+      "expectedCreditScore": 825,
+      "expectedRiskCategory": "Good"
+    },
+    {
+      "applicationId": "IND-SAMPLE-002",
+      "personalInfo": {
+        "fullName": "Priya Mehta",
+        "dateOfBirth": "1995-08-22",
+        "gender": "female",
+        "maritalStatus": "single",
+        "dependents": 0,
+        "mobileNumber": "9123456789",
+        "email": "priya.mehta@email.com"
+      },
+      "address": {
+        "address": "House No. 45, Rajpur Road",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "pincode": "248001",
+        "residenceType": "owned",
+        "yearsAtAddress": 10
+      },
+      "employment": {
+        "employmentType": "freelancer",
+        "employerName": "Self (Graphic Designer)",
+        "monthlyIncome": 42000,
+        "yearsEmployed": 2.5,
+        "industryType": "other"
+      },
+      "education": {
+        "qualification": "postgraduate"
+      },
+      "banking": {
+        "hasBankAccount": true,
+        "bankName": "State Bank of India",
+        "accountType": "savings",
+        "averageBalance": 18000
+      },
+      "alternativeData": {
+        "hasUtilityBills": true,
+        "hasRentalAgreement": false,
+        "hasUPIHistory": true,
+        "hasSocialMedia": true,
+        "utilityBillPaymentRegularity": 88,
+        "upiTransactionCount": 98,
+        "avgMonthlyUpiSpending": 22000
+      },
+      "loanDetails": {
+        "loanAmount": 150000,
+        "loanPurpose": "business",
+        "repaymentPeriod": 24
+      },
+      "expectedCreditScore": 742,
+      "expectedRiskCategory": "Fair"
+    }
+  ],
+  "sampleSMEApplications": [
+    {
+      "applicationId": "SME-SAMPLE-001",
+      "businessInfo": {
+        "businessName": "Sharma Electronics & Appliances",
+        "businessType": "retail",
+        "registrationType": "proprietorship",
+        "yearOfEstablishment": 2018,
+        "gstNumber": "29ABCDE1234F1Z5",
+        "panNumber": "ABCDE1234F",
+        "industryType": "retail",
+        "numberOfEmployees": "6-10"
+      },
+      "ownerInfo": {
+        "ownerName": "Ramesh Sharma",
+        "designation": "Proprietor",
+        "mobileNumber": "9988776655",
+        "email": "info@sharmaelectronics.com"
+      },
+      "businessAddress": {
+        "address": "Shop No. 12-15, Main Market, Lajpat Nagar",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110024"
+      },
+      "financials": {
+        "annualRevenue": 8500000,
+        "monthlyRevenue": 708000,
+        "averageMonthlyProfit": 106000,
+        "hasGSTReturns": true,
+        "hasITReturns": true
+      },
+      "banking": {
+        "hasBankAccount": true,
+        "bankName": "ICICI Bank",
+        "accountType": "current",
+        "averageBalance": 285000,
+        "monthlyTransactions": 245
+      },
+      "alternativeData": {
+        "hasBusinessWebsite": false,
+        "hasDigitalPresence": true,
+        "socialMediaLinks": "Facebook: @sharmaelectronics",
+        "hasUtilityBills": true,
+        "hasRentalAgreement": false
+      },
+      "businessMetrics": {
+        "customerBase": "501-1000",
+        "supplierCount": "11-20",
+        "hasInventory": true,
+        "inventoryValue": 1200000,
+        "businessVintage": 6
+      },
+      "loanDetails": {
+        "loanAmount": 2000000,
+        "loanPurpose": "working-capital",
+        "repaymentPeriod": 36
+      },
+      "expectedCreditScore": 878,
+      "expectedRiskCategory": "Excellent"
+    },
+    {
+      "applicationId": "SME-SAMPLE-002",
+      "businessInfo": {
+        "businessName": "Fresh Foods Catering Services",
+        "businessType": "services",
+        "registrationType": "partnership",
+        "yearOfEstablishment": 2021,
+        "gstNumber": "27XYZAB5678G2H4",
+        "panNumber": "XYZAB5678G",
+        "industryType": "hospitality",
+        "numberOfEmployees": "11-25"
+      },
+      "ownerInfo": {
+        "ownerName": "Anita Verma",
+        "designation": "Partner",
+        "mobileNumber": "9876123456",
+        "email": "contact@freshfoodscatering.com"
+      },
+      "businessAddress": {
+        "address": "Plot No. 45, Industrial Area, Phase 2",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400053"
+      },
+      "financials": {
+        "annualRevenue": 4200000,
+        "monthlyRevenue": 350000,
+        "averageMonthlyProfit": 52500,
+        "hasGSTReturns": true,
+        "hasITReturns": true
+      },
+      "banking": {
+        "hasBankAccount": true,
+        "bankName": "Axis Bank",
+        "accountType": "current",
+        "averageBalance": 125000,
+        "monthlyTransactions": 186
+      },
+      "alternativeData": {
+        "hasBusinessWebsite": true,
+        "websiteUrl": "https://www.freshfoodscatering.com",
+        "hasDigitalPresence": true,
+        "socialMediaLinks": "Instagram: @freshfoodscatering, Facebook: Fresh Foods",
+        "hasUtilityBills": true,
+        "hasRentalAgreement": true
+      },
+      "businessMetrics": {
+        "customerBase": "51-200",
+        "supplierCount": "6-10",
+        "hasInventory": true,
+        "inventoryValue": 300000,
+        "businessVintage": 3
+      },
+      "loanDetails": {
+        "loanAmount": 800000,
+        "loanPurpose": "expansion",
+        "repaymentPeriod": 24
+      },
+      "expectedCreditScore": 725,
+      "expectedRiskCategory": "Good"
+    }
+  ],
+  "dataFieldDescriptions": {
+    "utilityBillPaymentRegularity": "Percentage of utility bills paid on time (0-100)",
+    "upiTransactionCount": "Number of UPI transactions in last 6 months",
+    "avgMonthlyUpiSpending": "Average monthly spending through UPI platforms",
+    "businessVintage": "Number of years the business has been operational",
+    "monthlyTransactions": "Average number of bank transactions per month"
+  }
+}

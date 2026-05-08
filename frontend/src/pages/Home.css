@@ -1,0 +1,243 @@
+.home-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 24px;
+  margin-bottom: 4rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.5);
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.features-section {
+  margin: 5rem 0;
+}
+
+.features-section h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.feature-card-modern {
+  height: 100%;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 1rem;
+}
+
+.feature-icon-modern {
+  font-size: 3.5rem;
+  color: #06b6d4;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.feature-card-modern h3 {
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.feature-card-modern p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  margin: 5rem 0;
+  padding: 3rem 0;
+}
+
+.cta-section h2 {
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.cta-section > p {
+  color: #6b7280;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-card-modern {
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4);
+}
+
+.cta-card-modern a {
+  text-decoration: none;
+}
+
+.cta-icon-modern {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  color: white;
+}
+
+.cta-card-modern h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cta-card-modern p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cta-card-modern .ant-btn {
+  margin-top: 1rem;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  background: white;
+  color: #0f172a;
+  border: none;
+}
+
+.cta-card-modern .ant-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+/* Data Sources Section */
+.data-sources-section {
+  margin: 5rem 0;
+  padding: 3rem 0;
+}
+
+.data-sources-section h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.data-card-modern {
+  height: 100%;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.data-card-modern:hover {
+  border-color: #06b6d4;
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.15);
+}
+
+.data-icon-modern {
+  font-size: 2.5rem;
+  color: #06b6d4;
+  margin-bottom: 1rem;
+}
+
+.data-card-modern h4 {
+  color: #1f2937;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.data-card-modern p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Stats Section */
+.stats-section {
+  margin: 5rem 0;
+  padding: 3rem;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 24px;
+}
+
+.stat-card-modern {
+  border-radius: 16px;
+  border: none;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: white;
+}
+
+.stat-card-modern .ant-statistic-title {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.stat-card-modern .ant-statistic-content {
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .features-section h2,
+  .cta-section h2,
+  .data-sources-section h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-card-modern h3 {
+    font-size: 1.5rem;
+  }
+}

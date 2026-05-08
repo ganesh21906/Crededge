@@ -1,0 +1,201 @@
+/* Dashboard — B2B Analytics Hub */
+
+.dashboard-wrapper {
+  min-height: 100vh;
+  background: #f0f2f8;
+}
+
+.dashboard-header-band {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 20px 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dashboard-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  color: #fff !important;
+  font-size: 1.6rem !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+  letter-spacing: -0.5px;
+}
+
+.dashboard-subtitle {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.85rem;
+  margin: 4px 0 0;
+}
+
+.dashboard-live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #10b981;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #10b981;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.3); }
+}
+
+.dashboard-body {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ── KPI Cards ── */
+.kpi-card {
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.kpi-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  font-size: 1.1rem;
+}
+
+.kpi-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.kpi-label {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.kpi-suffix {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* ── Tabs ── */
+.dashboard-tabs .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+/* ── Chart Cards ── */
+.chart-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.chart-card .ant-card-head {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* ── Engine Health Cards ── */
+.engine-health-card {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.engine-health-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.engine-health-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.engine-health-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.engine-health-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* ── Score Tiers ── */
+.score-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .score-tier-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .score-tier-grid { grid-template-columns: 1fr; }
+}
+
+.score-tier-card {
+  padding: 16px;
+  border-radius: 10px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.tier-score-range {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.tier-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.tier-details-table {
+  width: 100%;
+  font-size: 12px;
+  text-align: left;
+}
+
+.tier-details-table td {
+  padding: 3px 0;
+  color: #374151;
+}
+
+.tier-details-table td:first-child {
+  color: #6b7280;
+  padding-right: 8px;
+}

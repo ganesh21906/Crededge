@@ -1,0 +1,236 @@
+/* Psychometric Quiz Styles */
+
+.quiz-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ── Intro ── */
+.quiz-intro-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 560px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.quiz-intro-icon { font-size: 4rem; margin-bottom: 16px; }
+
+.quiz-intro-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 12px;
+}
+
+.quiz-intro-sub {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.quiz-app-id {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #1d4ed8;
+  margin-bottom: 20px;
+}
+
+.quiz-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quiz-category-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.quiz-info-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+/* ── Progress Bar ── */
+.quiz-progress-bar {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.quiz-progress-text {
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* ── Question Card ── */
+.quiz-question-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.quiz-question-header { margin-bottom: 20px; }
+
+.quiz-question-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  color: #374151;
+  transition: border-color 0.2s, background 0.2s;
+  width: 100%;
+}
+
+.quiz-option:hover { border-color: #a5b4fc; background: #f5f3ff; }
+.quiz-option.selected { border-width: 2px; font-weight: 600; }
+
+.quiz-option-letter {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s;
+}
+
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+/* ── Result ── */
+.quiz-result-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.quiz-result-trophy { font-size: 4rem; margin-bottom: 8px; }
+
+.quiz-result-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 24px;
+}
+
+.quiz-result-score-ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 6px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.quiz-score-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.quiz-score-label { font-size: 14px; color: #9ca3af; }
+
+.quiz-grade {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.quiz-bonus-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.quiz-breakdown {
+  text-align: left;
+  margin-top: 16px;
+}
+
+.quiz-breakdown-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #374151;
+  min-width: 0;
+}
+
+.quiz-breakdown-row > span:first-child {
+  width: 150px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,233 @@
+{
+  "alternativeDataSources": [
+    {
+      "category": "Utility Payments",
+      "description": "Regular payment of electricity, water, gas, and mobile bills",
+      "dataFields": [
+        "Payment regularity percentage",
+        "Average monthly bill amount",
+        "Number of delayed payments",
+        "Longest payment streak"
+      ],
+      "weightInScore": 25,
+      "realWorldAPIs": [
+        "BBPS (Bharat Bill Payment System)",
+        "Electricity board portals",
+        "Telecom provider APIs"
+      ],
+      "sampleData": {
+        "paymentRegularity": 95,
+        "avgMonthlyAmount": 3500,
+        "delayedPayments": 1,
+        "longestStreak": 24
+      }
+    },
+    {
+      "category": "Digital Payment History",
+      "description": "UPI, mobile wallet, and digital payment patterns",
+      "dataFields": [
+        "Transaction count per month",
+        "Average transaction amount",
+        "Merchant diversity",
+        "Payment timing consistency"
+      ],
+      "weightInScore": 20,
+      "realWorldAPIs": [
+        "PhonePe API",
+        "Google Pay Merchant API",
+        "Paytm Business API",
+        "NPCI UPI data"
+      ],
+      "sampleData": {
+        "monthlyTransactions": 85,
+        "avgTransactionAmount": 1200,
+        "merchantCount": 42,
+        "consistencyScore": 88
+      }
+    },
+    {
+      "category": "Rental Payment History",
+      "description": "Regular rent payment records",
+      "dataFields": [
+        "Rent amount",
+        "Payment punctuality",
+        "Tenure at current address",
+        "Landlord verification"
+      ],
+      "weightInScore": 15,
+      "realWorldAPIs": [
+        "NoBroker Rent Receipt API",
+        "Housing.com",
+        "Manual upload verification"
+      ],
+      "sampleData": {
+        "monthlyRent": 15000,
+        "punctualityScore": 92,
+        "tenureMonths": 36,
+        "verified": true
+      }
+    },
+    {
+      "category": "GST & Tax Data (For SMEs)",
+      "description": "GST filing regularity and business tax compliance",
+      "dataFields": [
+        "GST number",
+        "Filing regularity",
+        "Annual turnover",
+        "Tax payment timeliness"
+      ],
+      "weightInScore": 30,
+      "realWorldAPIs": [
+        "GST Portal Public API",
+        "Income Tax e-filing API",
+        "ClearTax API"
+      ],
+      "sampleData": {
+        "gstNumber": "29ABCDE1234F1Z5",
+        "filingRegularity": 100,
+        "annualTurnover": 5000000,
+        "taxTimeliness": 95
+      }
+    },
+    {
+      "category": "Employment Verification",
+      "description": "Job stability and income verification",
+      "dataFields": [
+        "Employer name",
+        "Employment duration",
+        "Salary credit pattern",
+        "PF/ESIC records"
+      ],
+      "weightInScore": 20,
+      "realWorldAPIs": [
+        "EPFO API (Employee Provident Fund)",
+        "LinkedIn API",
+        "Salary slip verification"
+      ],
+      "sampleData": {
+        "employerName": "Infosys Ltd",
+        "durationMonths": 48,
+        "salaryCreditRegularity": 100,
+        "pfVerified": true
+      }
+    },
+    {
+      "category": "Educational Background",
+      "description": "Formal education and skill certifications",
+      "dataFields": [
+        "Highest degree",
+        "Institution tier",
+        "Certifications",
+        "Skills verified"
+      ],
+      "weightInScore": 10,
+      "realWorldAPIs": [
+        "DigiLocker Education API",
+        "LinkedIn Learning",
+        "Coursera/Udemy certificates"
+      ],
+      "sampleData": {
+        "degree": "B.Tech (Computer Science)",
+        "institutionTier": "Tier-1",
+        "certifications": 5,
+        "skillsVerified": true
+      }
+    },
+    {
+      "category": "Social Media & Digital Footprint",
+      "description": "Professional network and online presence",
+      "dataFields": [
+        "LinkedIn profile completeness",
+        "Professional connections",
+        "Endorsements",
+        "Activity level"
+      ],
+      "weightInScore": 5,
+      "realWorldAPIs": [
+        "LinkedIn API",
+        "Twitter API (employment tweets)",
+        "Facebook Graph API"
+      ],
+      "sampleData": {
+        "profileCompleteness": 85,
+        "connections": 320,
+        "endorsements": 12,
+        "activityScore": 70
+      }
+    },
+    {
+      "category": "Bank Transaction Analysis",
+      "description": "Savings behavior and cash flow patterns",
+      "dataFields": [
+        "Average balance",
+        "Deposit regularity",
+        "Spending patterns",
+        "Savings ratio"
+      ],
+      "weightInScore": 25,
+      "realWorldAPIs": [
+        "Account Aggregator Framework",
+        "Bank statement analysis APIs",
+        "Finvu, Perfios, FinBox"
+      ],
+      "sampleData": {
+        "avgBalance": 35000,
+        "depositRegularity": 90,
+        "spendingScore": 75,
+        "savingsRatio": 22
+      }
+    }
+  ],
+  "creditScoringFormula": {
+    "description": "AI-based credit scoring using alternative data",
+    "components": [
+      {
+        "factor": "Payment History (Utility + Rent)",
+        "weight": 35,
+        "calculation": "Regular payment percentage * consistency score"
+      },
+      {
+        "factor": "Income/Revenue Stability",
+        "weight": 25,
+        "calculation": "Income regularity * employment/business duration"
+      },
+      {
+        "factor": "Alternative Data Availability",
+        "weight": 20,
+        "calculation": "Number of verified data sources * quality score"
+      },
+      {
+        "factor": "Digital Behavior",
+        "weight": 15,
+        "calculation": "UPI patterns + digital payment diversity"
+      },
+      {
+        "factor": "Debt Obligations",
+        "weight": 5,
+        "calculation": "Debt-to-income ratio (negative factor)"
+      }
+    ],
+    "scoreRange": "0-1000",
+    "riskCategories": {
+      "excellent": "850-1000",
+      "good": "750-849",
+      "fair": "650-749",
+      "poor": "0-649"
+    }
+  },
+  "mlModelFeatures": [
+    "payment_regularity_score",
+    "income_stability_index",
+    "digital_footprint_score",
+    "employment_tenure_months",
+    "utility_payment_streak",
+    "upi_transaction_frequency",
+    "avg_bank_balance",
+    "education_tier_score",
+    "business_vintage_years",
+    "gst_filing_regularity",
+    "debt_to_income_ratio",
+    "alternative_data_count",
+    "social_verification_score"
+  ]
+}

@@ -1,0 +1,225 @@
+/* Engines Page Styles */
+
+.engines-page {
+  min-height: 100vh;
+  background: #f0f2f8;
+}
+
+/* Hero */
+.engines-hero {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  padding: 60px 24px 80px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.engines-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.engines-hero-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.3);
+  border: 1px solid rgba(99, 102, 241, 0.5);
+  color: #a5b4fc;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.engines-hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0 0 16px;
+  background: linear-gradient(135deg, #fff, #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.engines-hero-sub {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.engines-stat {
+  text-align: center;
+  padding: 12px 24px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.engines-stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #a5b4fc;
+}
+
+.engines-stat-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 2px;
+}
+
+/* Body */
+.engines-body {
+  max-width: 1400px;
+  margin: -40px auto 0;
+  padding: 0 24px 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Pipeline card */
+.pipeline-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.pipeline-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.pipeline-step {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.pipeline-step.start { background: #eff6ff; border-color: #3b82f6; color: #1d4ed8; }
+.pipeline-step.end   { background: #f0fdf4; border-color: #10b981; color: #065f46; }
+
+.pipeline-arrow {
+  color: #9ca3af;
+  font-size: 1.2rem;
+}
+
+/* Engine Cards */
+.engine-card {
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  background: #fff;
+  height: 100%;
+}
+
+.engine-card:hover, .engine-card.selected {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.engine-card.selected {
+  background: #fafafa;
+}
+
+.engine-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.engine-card-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.engine-card-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.engine-card-desc {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.engine-bonus-bar { margin-top: 8px; }
+
+/* Score Architecture Table */
+.arch-table-card {
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.score-arch-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sat-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.2fr 1.2fr 1fr;
+  background: #1a1a2e;
+  color: rgba(255,255,255,0.8);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 12px 20px;
+  gap: 8px;
+}
+
+.sat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.2fr 1.2fr 1fr;
+  padding: 14px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  align-items: center;
+  font-size: 13px;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.sat-row:hover { background: #f9fafb; }
+.sat-row:last-child { border-bottom: none; }
+
+@media (max-width: 768px) {
+  .sat-header, .sat-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 11px;
+  }
+}
+
+/* CTA */
+.engines-cta {
+  margin-top: 40px;
+  text-align: center;
+  padding: 48px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.engines-cta h2 {
+  color: #fff !important;
+  font-size: 1.8rem !important;
+  margin-bottom: 12px !important;
+}
+
+.engines-cta p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+}

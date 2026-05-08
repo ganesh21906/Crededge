@@ -1,0 +1,123 @@
+.track-page {
+  background: #f0f2f5;
+  min-height: 100vh;
+  padding: 0 0 48px;
+}
+
+.track-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+  padding: 60px 24px 40px;
+  text-align: center;
+  color: white;
+}
+
+.track-hero-icon {
+  font-size: 52px !important;
+  color: #60a5fa;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.track-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 8px;
+}
+
+.track-hero p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  margin: 0 0 32px;
+}
+
+.track-search-box {
+  display: flex;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.track-input {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.15) !important;
+  color: white !important;
+}
+
+.track-input input {
+  background: transparent !important;
+  color: white !important;
+}
+
+.track-input input::placeholder {
+  color: #64748b !important;
+}
+
+.track-result {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+.track-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important;
+}
+
+.track-header-card {
+  overflow: hidden;
+}
+
+.track-app-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #1f2937;
+}
+
+.track-date {
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.track-score-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.track-stat-card {
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.track-stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.track-empty {
+  text-align: center;
+  padding: 60px 24px 0;
+}
+
+.track-empty-cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.track-example-card {
+  border-radius: 12px !important;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+.track-example-card p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 8px 0 0;
+}
