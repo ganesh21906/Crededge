@@ -212,9 +212,9 @@ python app_ml_integrated.py
 - **Phase 1**: Project setup and design (2 weeks)
 - **Phase 2**: Backend and ML development (3 weeks)
 - **Phase 3**: Frontend development (3 weeks)
-- **Phase 4**: Testing and deployment (2 weeks)
+- **Phase 4**: Testing and deployment (4 weeks)
 
-## Team
+## Team 
 Crededge
 ## License
 MIT
