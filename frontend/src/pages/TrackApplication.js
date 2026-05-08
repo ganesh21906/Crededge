@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Card, Input, Button, Alert, Spin, Tag, Divider, Row, Col, Progress, List, Statistic } from 'antd';
-import { SearchOutlined, CheckCircleOutlined, ClockCircleOutlined, CloseCircleOutlined, BankOutlined, RocketOutlined } from '@ant-design/icons';
+import { Card, Input, Button, Alert, Spin, Tag, Row, Col, Progress, List, Statistic } from 'antd';
+import { SearchOutlined, CheckCircleOutlined, BankOutlined, RocketOutlined } from '@ant-design/icons';
 import { getApplicationById } from '../services/api';
-import { RISK_CATEGORIES, SCORE_THRESHOLDS } from '../constants';
+import { RISK_CATEGORIES } from '../constants';
 import { Link } from 'react-router-dom';
 import './TrackApplication.css';
 
@@ -35,12 +35,6 @@ function TrackApplication() {
     } finally {
       setLoading(false);
     }
-  };
-
-  const getStatusIcon = (status) => {
-    if (status === 'approved') return <CheckCircleOutlined style={{ color: '#52c41a', fontSize: 20 }} />;
-    if (status === 'rejected') return <CloseCircleOutlined style={{ color: '#f5222d', fontSize: 20 }} />;
-    return <ClockCircleOutlined style={{ color: '#fa8c16', fontSize: 20 }} />;
   };
 
   const getStatusTag = (status) => {

@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  Row, Col, Card, Statistic, Table, Tag, Button, Badge,
-  Progress, Alert, Tabs, Tooltip, Space, Divider, message
+  Row, Col, Card, Table, Tag, Button, Badge,
+  Progress, Alert, Tabs, Tooltip, Space, Divider
 } from 'antd';
 import {
-  ThunderboltOutlined, SafetyOutlined, BrainOutlined,
-  FileTextOutlined, BankOutlined, ApiOutlined, BarChartOutlined,
-  CheckCircleOutlined, WarningOutlined, CloseCircleOutlined,
-  RiseOutlined, TeamOutlined, DashboardOutlined, AlertOutlined,
+  ThunderboltOutlined, SafetyOutlined,
+  FileTextOutlined, BankOutlined, BarChartOutlined,
+  CheckCircleOutlined, WarningOutlined,
+  TeamOutlined, DashboardOutlined, AlertOutlined,
   LineChartOutlined, PieChartOutlined
 } from '@ant-design/icons';
 import {
   PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis,
-  CartesianGrid, Tooltip as RechartTooltip, Legend,
-  ResponsiveContainer, RadarChart, Radar, PolarGrid,
-  PolarAngleAxis, LineChart, Line
+  CartesianGrid, Tooltip as RechartTooltip,
+  ResponsiveContainer
 } from 'recharts';
 import { getAdminStats, getAdminApplications, getScoreArchitecture } from '../services/api';
 import './Dashboard.css';
 
-const COLORS = ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'];
 const RISK_COLORS = { Excellent: '#10b981', Good: '#3b82f6', Fair: '#f59e0b', Poor: '#ef4444' };
 const FRAUD_COLORS = { Low: '#10b981', Medium: '#f59e0b', High: '#ef4444' };
 
